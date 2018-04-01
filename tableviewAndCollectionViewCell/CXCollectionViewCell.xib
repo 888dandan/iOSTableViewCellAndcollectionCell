@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CXCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="91" height="89"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="91" height="89"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="abd_chengyun.png" translatesAutoresizingMaskIntoConstraints="NO" id="FYI-Bn-gng">
+                        <rect key="frame" x="0.0" y="0.0" width="91" height="89"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oQY-zB-2U3">
+                        <rect key="frame" x="74" y="2" width="15" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="WEQ-ic-D4K"/>
+                            <constraint firstAttribute="width" constant="15" id="t6S-9V-hH7"/>
+                        </constraints>
+                        <state key="normal" image="delete.png"/>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="oQY-zB-2U3" secondAttribute="trailing" constant="2" id="7rb-fJ-ptS"/>
+                <constraint firstAttribute="bottom" secondItem="FYI-Bn-gng" secondAttribute="bottom" id="8qd-WY-rCh"/>
+                <constraint firstItem="FYI-Bn-gng" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="9wH-X9-01T"/>
+                <constraint firstAttribute="trailing" secondItem="FYI-Bn-gng" secondAttribute="trailing" id="D10-97-4tA"/>
+                <constraint firstItem="FYI-Bn-gng" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Mj0-uR-ziR"/>
+                <constraint firstItem="oQY-zB-2U3" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="2" id="uMa-6v-bxA"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <size key="customSize" width="91" height="89"/>
+            <connections>
+                <outlet property="deleteBtn" destination="oQY-zB-2U3" id="z86-nk-kLE"/>
+                <outlet property="myImageView" destination="FYI-Bn-gng" id="8Up-Nv-EKS"/>
+            </connections>
+            <point key="canvasLocation" x="13.5" y="73.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="abd_chengyun.png" width="148" height="148"/>
+        <image name="delete.png" width="24" height="24"/>
+    </resources>
+</document>
